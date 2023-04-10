@@ -19,4 +19,9 @@ public class DemoApplication {
     public ResponseEntity<?> hola(){
         return ResponseEntity.ok("HOla");
     }
+
+    @GetMapping("/")
+    public ResponseEntity<?> hola2(){
+        return ResponseEntity.ok("Works");
+    }
 }
