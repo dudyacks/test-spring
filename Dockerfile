@@ -4,5 +4,5 @@ WORKDIR /app
 RUN ./gradlew clean build
 
 FROM openjdk:17-oracle
-COPY --from=build /app/build/libs/*.jar /app/app.jar
+COPY --from=build /app/build/libs/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 CMD ["java", "-jar", "/app/app.jar"]
